@@ -1,0 +1,37 @@
+{
+    "applications": {
+        "gecko": {
+            "id": "two-fingers-gestures@pea3nut.org",
+            "strict_min_version": "54.0"
+        }
+    },
+    "author": "__MSG_extensionAuthor__",
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "match_about_blank": true,
+            "run_at": "document_start"
+        }
+    ],
+    "default_locale": "en_US",
+    "description": "__MSG_extensionDescription__",
+    "homepage_url": "https://github.com/pea3nut/two-fingers-gestures/",
+    "icons": {
+        "128": "favicon@128.png"
+    },
+    "manifest_version": 2,
+    "name": "__MSG_extensionName__",
+    "permissions": [
+    ],
+    "version": "0.0.2"
+}

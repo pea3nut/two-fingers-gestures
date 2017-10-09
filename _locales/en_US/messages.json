@@ -1,0 +1,14 @@
+{
+  "extensionDescription": {
+    "message": "Two fingers gestures. Up to close the tab, Down to open a new tab, Left and Right to switch tab"
+  },
+  "extensionName": {
+    "message": "two fingers gestures"
+  },
+  "extensionAuthor": {
+    "message": "pea3nut"
+  },
+  "open_tab_url": {
+    "message": "https://www.google.com/"
+  }
+}

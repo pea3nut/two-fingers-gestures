@@ -1,0 +1,14 @@
+{
+  "extensionDescription": {
+    "message": "双指手势。向上关闭标签页，向下新建标签页，向左或向右切换标签页"
+  },
+  "extensionName": {
+    "message": "双指手势"
+  },
+  "extensionAuthor": {
+    "message": "花生PeA"
+  },
+  "open_tab_url": {
+    "message": "https://www.baidu.com/"
+  }
+}
