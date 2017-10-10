@@ -23,8 +23,8 @@ new class App{
             this._linesCache.value =[];
             for(let i=0 ;i<this.toucheNumber ;i++){
                 this._linesCache.value[i] ={
-                    x :this.touchTrack[1].touches[i].screenX -this.touchTrack[0].touches[i].screenX,
-                    y :this.touchTrack[0].touches[i].screenY -this.touchTrack[1].touches[i].screenY,
+                    x :this.touchTrack[1].touches[i].clientX -this.touchTrack[0].touches[i].clientX,
+                    y :this.touchTrack[0].touches[i].clientY -this.touchTrack[1].touches[i].clientY,
                 };
             };
         };
