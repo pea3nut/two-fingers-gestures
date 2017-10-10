@@ -36,7 +36,6 @@ new class App{
             if(this.isEffectEvent(event)){
                 if(this.touchTrack.length ===0){
                     this.touchTrack[0] =event;
-                    event.preventDefault();//for performance
                 }else{
                     this.touchTrack[1] =event;
                     if(this.checkoutState()){
