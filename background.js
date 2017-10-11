@@ -1,4 +1,3 @@
-const OpenTabUrl =browser.i18n.getMessage('open_tab_url');
 /**
  * @param {object} data
  * @param {string} data.type - [up|down|left|right]
@@ -14,7 +13,7 @@ browser.runtime.onMessage.addListener(function(data ,sender){
             let [activeTab] =await browser.tabs.query({active:true});
             await browser.tabs.create({
                 active :true,
-                url :OpenTabUrl,
+                url :await getOpenUrl(),
                 index :activeTab.index+1,
             });
             break;

@@ -8,7 +8,13 @@
   "extensionAuthor": {
     "message": "花生PeA"
   },
-  "open_tab_url": {
+  "openNewTabUrlLabel": {
+    "message": "打开新标签页的地址："
+  },
+  "saveOpenNewTabUrlButton": {
+    "message": "保存"
+  },
+  "openTabDefaultUrl": {
     "message": "https://www.baidu.com/"
   }
 }

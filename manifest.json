@@ -8,6 +8,7 @@
     "author": "__MSG_extensionAuthor__",
     "background": {
         "scripts": [
+            "common.js",
             "background.js"
         ]
     },
@@ -31,7 +32,11 @@
     },
     "manifest_version": 2,
     "name": "__MSG_extensionName__",
+    "options_ui": {
+        "page": "options.html"
+    },
     "permissions": [
+        "storage"
     ],
     "version": "0.0.2"
 }

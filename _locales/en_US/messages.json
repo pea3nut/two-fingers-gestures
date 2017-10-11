@@ -8,7 +8,13 @@
   "extensionAuthor": {
     "message": "pea3nut"
   },
-  "open_tab_url": {
+  "openNewTabUrlLabel": {
+    "message": "open new tab use:"
+  },
+  "saveOpenNewTabUrlButton": {
+    "message": "save"
+  },
+  "openTabDefaultUrl": {
     "message": "https://www.google.com/"
   }
 }
