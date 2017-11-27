@@ -2,7 +2,7 @@
     "applications": {
         "gecko": {
             "id": "two-fingers-gestures@pea3nut.org",
-            "strict_min_version": "54.0"
+            "strict_min_version": "52.0"
         }
     },
     "author": "__MSG_extensionAuthor__",
