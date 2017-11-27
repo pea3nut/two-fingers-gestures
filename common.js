@@ -5,9 +5,22 @@ async function getOpenUrl(){
     };
     return url;
 };
+async function getSensitivity(){
+    var value =(await browser.storage.local.get('sensitivity'))['sensitivity'];
+    if(!value){
+        value =screen.width*0.2;
+    };
+    return value;
+};
+
 async function setOpenUrl(url){
     return browser.storage.sync.set({
         'open_tab_url' :url,
+    });
+};
+async function setSensitivity(value){
+    return browser.storage.local.set({
+        'sensitivity' :value,
     });
 };
 function renderI18N(rootElt,mark='i18n:'){

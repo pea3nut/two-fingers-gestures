@@ -18,6 +18,7 @@
                 "<all_urls>"
             ],
             "js": [
+                "common.js",
                 "content.js"
             ],
             "match_about_blank": true,
@@ -33,10 +34,11 @@
     "manifest_version": 2,
     "name": "__MSG_extensionName__",
     "options_ui": {
-        "page": "options.html"
+        "page": "options.html",
+        "browser_style" :true
     },
     "permissions": [
         "storage"
     ],
-    "version": "0.0.2"
+    "version": "0.1.1"
 }

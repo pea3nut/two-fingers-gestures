@@ -9,12 +9,18 @@
     "message": "pea3nut"
   },
   "openNewTabUrlLabel": {
-    "message": "open new tab use:"
+    "message": "Open new tab use: "
   },
-  "saveOpenNewTabUrlButton": {
+  "save": {
     "message": "save"
   },
   "openTabDefaultUrl": {
     "message": "https://www.google.com/"
+  },
+  "autoGenerate": {
+    "message": "auto generate (20% of screen width)"
+  },
+  "judgeSensitivityLabel": {
+    "message": "Sensitivity: "
   }
 }

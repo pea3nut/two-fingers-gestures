@@ -11,10 +11,16 @@
   "openNewTabUrlLabel": {
     "message": "打开新标签页的地址："
   },
-  "saveOpenNewTabUrlButton": {
+  "save": {
     "message": "保存"
   },
   "openTabDefaultUrl": {
     "message": "https://www.baidu.com/"
+  },
+  "autoGenerate": {
+    "message": "自动生成（20%屏幕宽度）"
+  },
+  "judgeSensitivityLabel": {
+    "message": "灵敏度"
   }
 }

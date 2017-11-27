@@ -32,6 +32,13 @@ new class App{
     };
     init(){
         this.log('double-touch loaded');
+        getSensitivity().then(v=>this.threshold=v);
+        browser.storage.onChanged.addListener(changes=>{
+            if('sensitivity' in changes){
+                this.threshold =changes['sensitivity'].newValue;
+                this.log('update the threshold:',changes['sensitivity'].newValue);
+            };
+        });
         window.addEventListener('touchmove',event=>{
             if(this.isEffectEvent(event)){
                 if(this.touchTrack.length ===0){

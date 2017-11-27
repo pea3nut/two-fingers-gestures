@@ -15,4 +15,21 @@
     renderI18N('#main');
 
 }();
+~async function (){
+    var setValue =await getSensitivity();
+    var judgeSensitivityIpt =document.querySelector('#judgeSensitivity');
+    var autoGenerateBtn =document.querySelector('#autoGenerate');
+    var saveJudgeSensitivityBtn =document.querySelector('#saveJudgeSensitivity');
 
+
+    judgeSensitivityIpt.value =setValue;
+    autoGenerateBtn.addEventListener('click',function(){
+        judgeSensitivityIpt.value =screen.width*0.2;
+    });
+    saveJudgeSensitivityBtn.addEventListener('click',async function(){
+        judgeSensitivityIpt.disabled =true;
+        await setSensitivity(judgeSensitivityIpt.value);
+        judgeSensitivityIpt.disabled =false;
+    });
+
+}();

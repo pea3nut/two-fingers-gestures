@@ -2,6 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <style>
+        #main > div{
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        #main > div > .line{
+            margin-bottom: 5px;
+        }
+    </style>
     <title>Title</title>
 </head>
 <body>
@@ -13,8 +23,26 @@
             </label>
             <button
                     class="default" id="saveOpenNewTabUrl"
-                    i18n:text="saveOpenNewTabUrlButton"
+                    i18n:text="save"
             ></button>
+        </div>
+        <div>
+            <div class="line">
+                <label>
+                    <span i18n:text="judgeSensitivityLabel"></span>
+                    <input type="number" id="judgeSensitivity" />
+                </label>
+            </div>
+            <div class="line">
+                <button
+                        class="default" id="autoGenerate"
+                        i18n:text="autoGenerate"
+                ></button>
+                <button
+                        class="default" id="saveJudgeSensitivity"
+                        i18n:text="save"
+                ></button>
+            </div>
         </div>
     </div>
     <script src="/common.js"></script>
