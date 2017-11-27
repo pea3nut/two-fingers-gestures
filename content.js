@@ -80,17 +80,19 @@ new class App{
         return true;
     };
     judge({x,y}){
+        var threshold =this.threshold*(window.innerWidth/screen.width);
+
         var abs =Math.abs;
-        if(y>this.threshold &&abs(y)>abs(x)){
+        if(y>threshold &&abs(y)>abs(x)){
             return 'up';
         }
-        if(y<-this.threshold &&abs(y)>abs(x)){
+        if(y<-threshold &&abs(y)>abs(x)){
             return 'down';
         }
-        if(x>this.threshold &&abs(x)>abs(y)){
+        if(x>threshold &&abs(x)>abs(y)){
             return 'right';
         }
-        if(x<-this.threshold &&abs(x)>abs(y)){
+        if(x<-threshold &&abs(x)>abs(y)){
             return 'left';
         }
         return null;
