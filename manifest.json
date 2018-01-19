@@ -29,7 +29,7 @@
     "description": "__MSG_extensionDescription__",
     "homepage_url": "https://github.com/pea3nut/two-fingers-gestures/",
     "icons": {
-        "128": "favicon@128.png"
+        "256": "favicon@256.png"
     },
     "manifest_version": 2,
     "name": "__MSG_extensionName__",

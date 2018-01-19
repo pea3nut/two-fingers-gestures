@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "双指手势。向上关闭标签页，向下新建标签页，向左或向右切换标签页"
+    "message": "使用2根手指来快捷操控标签页。 双指向上关闭标签页，向下新建标签页，向左或向右切换标签页。"
   },
   "extensionName": {
     "message": "双指手势"
