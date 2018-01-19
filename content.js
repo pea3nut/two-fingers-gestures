@@ -5,6 +5,7 @@ new class App{
         this.threshold =screen.width*0.2;
         this.toucheNumber =2;//todo: set 1 debug on desktop
         this.develop =false;
+        this.startInnerWidth =window.innerWidth;
 
         this._linesCache ={
             value :null,
@@ -42,6 +43,7 @@ new class App{
         window.addEventListener('touchmove',event=>{
             if(this.isEffectEvent(event)){
                 if(this.touchTrack.length ===0){
+                    this.startInnerWidth =window.innerWidth;
                     this.touchTrack[0] =event;
                 }else{
                     this.touchTrack[1] =event;
@@ -60,6 +62,13 @@ new class App{
     };
     done(){
         if(this.state ===null)return;
+        if(Math.abs(window.innerWidth-this.startInnerWidth)/window.innerWidth>0.05){
+            this.log(
+                'it\'s change zoom.',
+                (Math.abs(window.innerWidth-this.startInnerWidth)/window.innerWidth).toFixed(3)*100+'%'
+            );
+            return;
+        };
         this.log('done',this.state);
         browser.runtime.sendMessage({type:this.state});
     };
